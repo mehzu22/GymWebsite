@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehzu's Gym</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Barlow:wght@100&family=Dancing+Script:wght@500;600&family=Explora&family=Pacifico&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS Reset */
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url("img/gym8.jpg");
+        /* font-family: 'Explora', cursive; */
+        /* font-family: 'Barlow', sans-serif; */
+        font-family: "Secular One", sans-serif;
+      }
+
+      .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+      }
+
+      .left img {
+        width: 20%;
+        position: relative;
+        left: 29px;
+        filter: invert(100%);
+      }
+
+      .left div {
+        /* text-align: center; */
+        font-size: 24px;
+      }
+
+      .mid {
+        display: block;
+        width: 40%;
+        margin: 40px auto;
+        /* border: 2px solid rgb(121, 122, 170); */
+      }
+
+      .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: 2px solid rgb(0, 255, 55); */
+        display: inline-block;
+      }
+
+      .navbar li {
+        display: inline-block;
+        font-size: 31px;
+      }
+
+      .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 33px 23px;
+      }
+
+      .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(87, 64, 110);
+      }
+
+      .btn {
+        margin: 23px 20px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(240, 235, 235);
+        padding: 4px 47px;
+        border-radius: 10px;
+        border: 2px solid gray;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: "Secular One", sans-serif;
+      }
+
+      .btn:hover {
+        background-color: rgb(87, 64, 110);
+      }
+
+      .container {
+        /* border: 3px solid rgb(187, 31, 161); */
+        margin: 83px 85px;
+        padding: 72px 32px;
+        border-radius: 12px;
+        width: 33%;
+      }
+
+      .form-class input {
+        text-align: center;
+        display: block;
+        border: 2px solid black;
+        border-radius: 15px;
+        margin: 7px auto;
+        padding: 14px;
+        width: 75%;
+        font-size: 21px;
+        font-family: "Aboreto", cursive;
+      }
+
+      .container h1 {
+        color: #162258f5;
+        text-align: center;
+        font-family: "Aboreto", cursive;
+        font-size: 50px;
+      }
+
+      .container button {
+        display: block;
+        width: 27%;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- Left box for logo -->
+      <div class="left">
+        <img src="img/logo2.jpg" alt="" />
+        <div>Mehzu Fitness</div>
+      </div>
+      <!-- Mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Club</a></li>
+          <li><a href="#"> Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Right box for buttons -->
+      <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Enjoy the best GYM of the city</h1>
+      <form action="noaction.php">
+        <div class="form-class">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div class="form-class">
+          <input type="number" placeholder="Enter your Age" />
+        </div>
+        <div class="form-class">
+          <input type="text" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-class">
+          <input type="number" placeholder="Enter your Mobile no." />
+        </div>
+        <div class="form-class">
+          <input type="text" placeholder="Enter your city" />
+        </div>
+        <br />
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
